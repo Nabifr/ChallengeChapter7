@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.RegistFragment"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="25dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        style="@style/txtHeader"/>
+
+    <ImageView
+        android:layout_width="270dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_movie_foreground" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="1dp"
+        android:minHeight="48dp"
+        app:boxCornerRadiusBottomEnd="36dp"
+        app:boxCornerRadiusTopEnd="36dp"
+        app:boxCornerRadiusBottomStart="36dp"
+        app:boxCornerRadiusTopStart="36dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etUname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Nama User"
+            android:textColorHint="#80D5D505"
+            android:textSize="18sp"
+            android:padding="5dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:minHeight="48dp"
+        app:boxCornerRadiusBottomEnd="36dp"
+        app:boxCornerRadiusTopEnd="36dp"
+        app:boxCornerRadiusBottomStart="36dp"
+        app:boxCornerRadiusTopStart="36dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Email"
+            android:textColorHint="#80D5D505"
+            android:textSize="18sp"
+            android:padding="5dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="14dp"
+        android:minHeight="48dp"
+        app:boxCornerRadiusBottomEnd="36dp"
+        app:boxCornerRadiusTopEnd="36dp"
+        app:boxCornerRadiusBottomStart="36dp"
+        app:boxCornerRadiusTopStart="36dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Password"
+            android:textColorHint="#80D5D505"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="14dp"
+        android:minHeight="48dp"
+        app:boxCornerRadiusBottomEnd="36dp"
+        app:boxCornerRadiusTopEnd="36dp"
+        app:boxCornerRadiusBottomStart="36dp"
+        app:boxCornerRadiusTopStart="36dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etConPwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Konfirmasi Password"
+            android:textColorHint="#80D5D505"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnRegist"
+        android:layout_marginTop="15dp"
+        android:text="Daftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:text="Sudah Memiliki Akun?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

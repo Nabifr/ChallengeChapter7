@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ProfileFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="25dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profil"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        style="@style/txtHeader"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:minHeight="48dp"
+        app:boxCornerRadiusBottomEnd="36dp"
+        app:boxCornerRadiusTopEnd="36dp"
+        app:boxCornerRadiusBottomStart="36dp"
+        app:boxCornerRadiusTopStart="36dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etUname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Nama User"
+            android:textColorHint="#80D5D505"
+            android:textSize="18sp"
+            android:padding="5dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:minHeight="48dp"
+        app:boxCornerRadiusBottomEnd="36dp"
+        app:boxCornerRadiusTopEnd="36dp"
+        app:boxCornerRadiusBottomStart="36dp"
+        app:boxCornerRadiusTopStart="36dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNameLong"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Nama Lengkap"
+            android:textColorHint="#80D5D505"
+            android:textSize="18sp"
+            android:padding="5dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:minHeight="48dp"
+        app:boxCornerRadiusBottomEnd="36dp"
+        app:boxCornerRadiusTopEnd="36dp"
+        app:boxCornerRadiusBottomStart="36dp"
+        app:boxCornerRadiusTopStart="36dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDateBirth"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Tanggal Lahir"
+            android:textColorHint="#80D5D505"
+            android:textSize="18sp"
+            android:padding="5dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:minHeight="48dp"
+        app:boxCornerRadiusBottomEnd="36dp"
+        app:boxCornerRadiusTopEnd="36dp"
+        app:boxCornerRadiusBottomStart="36dp"
+        app:boxCornerRadiusTopStart="36dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Alamat"
+            android:textColorHint="#80D5D505"
+            android:textSize="18sp"
+            android:padding="5dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_marginTop="15dp"
+        android:text="Perbarui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_marginTop="15dp"
+        android:text="Keluar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>
