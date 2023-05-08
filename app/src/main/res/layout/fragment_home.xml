@@ -43,7 +43,7 @@
 
     <TextView
         android:id="@+id/tv_home"
-        android:text="HOME"
+        android:text="@string/home"
         style="@style/txtHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

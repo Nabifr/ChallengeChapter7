@@ -13,7 +13,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Register"
+        android:text="@string/register"
         android:textSize="40sp"
         android:textColor="@color/black"
         style="@style/txtHeader"/>
@@ -39,7 +39,7 @@
             android:id="@+id/etUname"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Nama User"
+            android:hint="@string/nama_user"
             android:textColorHint="#80D5D505"
             android:textSize="18sp"
             android:padding="5dp"/>
@@ -60,7 +60,7 @@
             android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Email"
+            android:hint="@string/email"
             android:textColorHint="#80D5D505"
             android:textSize="18sp"
             android:padding="5dp"/>
@@ -83,7 +83,7 @@
             android:id="@+id/etPwd"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Password"
+            android:hint="@string/password"
             android:textColorHint="#80D5D505"
             android:textSize="18sp"
             android:padding="5dp"
@@ -106,7 +106,7 @@
             android:id="@+id/etConPwd"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Konfirmasi Password"
+            android:hint="@string/konfirmasi_password"
             android:textColorHint="#80D5D505"
             android:textSize="18sp"
             android:padding="5dp"
@@ -116,14 +116,14 @@
     <Button
         android:id="@+id/btnRegist"
         android:layout_marginTop="15dp"
-        android:text="Daftar"
+        android:text="@string/daftar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <TextView
         android:id="@+id/tvLogin"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="70dp"
-        android:text="Sudah Memiliki Akun?"
+        android:text="@string/sudah_memiliki_akun"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 

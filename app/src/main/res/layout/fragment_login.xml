@@ -14,7 +14,7 @@
         android:id="@+id/tvLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
+        android:text="@string/login"
         android:textSize="40sp"
         android:textColor="@color/black"
         style="@style/txtHeader"/>
@@ -41,7 +41,7 @@
             android:id="@+id/EtEmail"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Email"
+            android:hint="@string/emailLogin"
             android:textColorHint="#80D5D505"
             android:textSize="18sp"
             android:padding="5dp"/>
@@ -65,7 +65,7 @@
             android:id="@+id/EtPwd"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Kata Sandi"
+            android:hint="@string/kata_sandiLogin"
             android:textColorHint="#80D5D505"
             android:textSize="18sp"
             android:padding="5dp"
@@ -76,7 +76,7 @@
     <Button
         android:id="@+id/btnLogin"
         android:layout_marginTop="15dp"
-        android:text="Masuk"
+        android:text="@string/masuk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         />
@@ -84,7 +84,7 @@
         android:id="@+id/tvRegist"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="70dp"
-        android:text="Belum Memiliki Akun?"
+        android:text="@string/belum_memiliki_akun"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
