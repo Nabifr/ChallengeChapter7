@@ -60,6 +60,8 @@ class ProfileFragment : Fragment() {
             Toast.makeText(context, "Update Berhasil", Toast.LENGTH_SHORT).show()
             findNavController().navigate(R.id.action_profileFragment_to_homeFragment)
         }
+        binding.btnCrashlytics.setOnClickListener {
+            throw RuntimeException("Test Crash")
 
         binding.btnLogout.setOnClickListener {
             firebaseAuth = FirebaseAuth.getInstance()
@@ -73,4 +75,5 @@ class ProfileFragment : Fragment() {
             findNavController().navigate(R.id.action_profileFragment_to_loginFragment)
         }
     }
+}
 }

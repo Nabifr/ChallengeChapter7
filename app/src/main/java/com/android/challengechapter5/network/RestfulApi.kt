@@ -1,7 +1,6 @@
 package com.android.challengechapter5.network
 
 import com.android.challengechapter5.model.UpcomingMovieIngfoh
-import com.android.challengechapter5.model.UpcomingMovieItem
 import retrofit2.Call
 import retrofit2.http.GET
 

@@ -116,5 +116,16 @@
         android:layout_height="wrap_content"/>
 
 
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginTop="15dp"
+        android:id="@+id/btnCrashlytics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crashlytics Testing"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/teal_700"
+        app:cornerRadius="16dp">
+    </com.google.android.material.button.MaterialButton>
+
 
 </LinearLayout>
