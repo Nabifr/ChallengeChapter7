@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.android.challengechapter5.fragment.LoginFragment"
+        android:name="com.android.challengechapter5.view.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/registFragment"
-        android:name="com.android.challengechapter5.fragment.RegistFragment"
+        android:name="com.android.challengechapter5.view.RegistFragment"
         android:label="fragment_regist"
         tools:layout="@layout/fragment_regist" >
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.android.challengechapter5.fragment.HomeFragment"
+        android:name="com.android.challengechapter5.view.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -43,12 +43,12 @@
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
-        android:name="com.android.challengechapter5.fragment.DetailFragment"
+        android:name="com.android.challengechapter5.view.DetailFragment"
         android:label="fragment_detail"
         tools:layout="@layout/fragment_detail" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.android.challengechapter5.fragment.ProfileFragment"
+        android:name="com.android.challengechapter5.view.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" >
         <action

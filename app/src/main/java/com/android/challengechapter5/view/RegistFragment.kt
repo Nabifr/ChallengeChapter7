@@ -1,4 +1,4 @@
-package com.android.challengechapter5.fragment
+package com.android.challengechapter5.view
 
 import android.content.Context
 import android.content.SharedPreferences

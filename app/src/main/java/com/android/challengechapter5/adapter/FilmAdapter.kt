@@ -1,10 +1,11 @@
-package com.android.challengechapter5
+package com.android.challengechapter5.adapter
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
+import com.android.challengechapter5.R
 import com.android.challengechapter5.databinding.ItemFilmBinding
 import com.android.challengechapter5.model.UpcomingMovieItem
 import com.bumptech.glide.Glide

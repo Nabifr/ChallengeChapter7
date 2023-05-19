@@ -1,4 +1,4 @@
-package com.android.challengechapter5.fragment
+package com.android.challengechapter5.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

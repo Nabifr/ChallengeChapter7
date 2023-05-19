@@ -1,4 +1,4 @@
-package com.android.challengechapter5.fragment
+package com.android.challengechapter5.view
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -19,12 +19,10 @@ class ProfileFragment : Fragment() {
     lateinit var sharedPreferences: SharedPreferences
     lateinit var firebaseAuth: FirebaseAuth
 
-    //lateinit var firebaseAuth: FirebaseAuth
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         binding = FragmentProfileBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -62,6 +60,7 @@ class ProfileFragment : Fragment() {
         }
         binding.btnCrashlytics.setOnClickListener {
             throw RuntimeException("Test Crash")
+        }
 
         binding.btnLogout.setOnClickListener {
             firebaseAuth = FirebaseAuth.getInstance()
@@ -74,6 +73,9 @@ class ProfileFragment : Fragment() {
             Toast.makeText(context, "Keluar Berhasil", Toast.LENGTH_SHORT).show()
             findNavController().navigate(R.id.action_profileFragment_to_loginFragment)
         }
-    }
 }
+    private fun signout() {
+        firebaseAuth = FirebaseAuth.getInstance()
+        firebaseAuth.signOut()
+    }
 }

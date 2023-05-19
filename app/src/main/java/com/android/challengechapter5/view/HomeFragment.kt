@@ -1,4 +1,4 @@
-package com.android.challengechapter5.fragment
+package com.android.challengechapter5.view
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -12,7 +12,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.android.challengechapter5.FilmAdapter
+import com.android.challengechapter5.adapter.FilmAdapter
 import com.android.challengechapter5.R
 import com.android.challengechapter5.databinding.FragmentHomeBinding
 import com.android.challengechapter5.viewmodel.UpcomingViewModel
