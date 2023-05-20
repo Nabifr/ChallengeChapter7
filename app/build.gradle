@@ -4,6 +4,9 @@ plugins {
     id 'com.google.gms.google-services'
     // Add the Crashlytics Gradle plugin
     id 'com.google.firebase.crashlytics'
+    //Add the Hilt Plugin
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
 }
 
 android {
@@ -48,6 +51,8 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
     implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
     implementation 'com.google.firebase:firebase-auth-ktx:22.0.0'
+    implementation 'androidx.room:room-common:2.5.1'
+    implementation 'androidx.room:room-ktx:2.5.1'
     testImplementation 'junit:junit:4.13.2'
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1"
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
@@ -69,4 +74,31 @@ dependencies {
     //crashlytics
     implementation 'com.google.firebase:firebase-crashlytics-ktx'
     implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    //livedata
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
+
+    //work manager
+    implementation 'androidx.work:work-runtime-ktx:2.7.1'
+
+    //lib coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0'
+
+
+    //ROOM
+    implementation "androidx.room:room-runtime:2.5.0-beta01"
+    kapt "androidx.room:room-compiler:2.4.2"
+    implementation "androidx.room:room-ktx:2.4.2"
+    implementation "androidx.room:room-paging:2.4.2"
+
+// Paging 3.0
+    implementation 'androidx.paging:paging-compose:1.0.0-alpha15'
+
+    //hilt
+    implementation "com.google.dagger:hilt-android:2.44"
+    kapt "com.google.dagger:hilt-android-compiler:2.44"
+    kapt 'androidx.room:room-compiler:2.5.0-beta01'
+}
+kapt {
+    correctErrorTypes true
 }

@@ -12,7 +12,9 @@ import androidx.navigation.fragment.findNavController
 import com.android.challengechapter5.R
 import com.android.challengechapter5.databinding.FragmentProfileBinding
 import com.google.firebase.auth.FirebaseAuth
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class ProfileFragment : Fragment() {
 
     lateinit var binding: FragmentProfileBinding
@@ -74,8 +76,4 @@ class ProfileFragment : Fragment() {
             findNavController().navigate(R.id.action_profileFragment_to_loginFragment)
         }
 }
-    private fun signout() {
-        firebaseAuth = FirebaseAuth.getInstance()
-        firebaseAuth.signOut()
-    }
 }

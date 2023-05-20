@@ -8,13 +8,15 @@ import android.view.ViewGroup
 import com.android.challengechapter5.databinding.FragmentDetailBinding
 import com.android.challengechapter5.model.UpcomingMovieItem
 import com.bumptech.glide.Glide
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class DetailFragment : Fragment() {
     private lateinit var binding: FragmentDetailBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
 
-    ): View? {
+    ): View {
         binding = FragmentDetailBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -26,7 +28,7 @@ class DetailFragment : Fragment() {
         val getfilm = arguments?.getSerializable("BUNDEL") as UpcomingMovieItem
         Glide.with(view)
             .load("https://image.tmdb.org/t/p/w500${getfilm.posterPath}")
-            .into(binding.ivFilmimagedetail)
+            .into(binding.imgdetail)
         binding.tvNamaFilm.text = getfilm.title
         binding.tvRelease.text = "Release : ${getfilm.releaseDate}"
         binding.tvRating.text = "Rating : ${getfilm.popularity}"

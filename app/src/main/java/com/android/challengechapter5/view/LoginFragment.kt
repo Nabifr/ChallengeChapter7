@@ -10,8 +10,9 @@ import androidx.navigation.fragment.findNavController
 import com.android.challengechapter5.R
 import com.android.challengechapter5.databinding.FragmentLoginBinding
 import com.google.firebase.auth.FirebaseAuth
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class LoginFragment : Fragment() {
 
     lateinit var binding: FragmentLoginBinding

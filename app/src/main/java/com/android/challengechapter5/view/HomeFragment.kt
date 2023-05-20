@@ -17,12 +17,15 @@ import com.android.challengechapter5.R
 import com.android.challengechapter5.databinding.FragmentHomeBinding
 import com.android.challengechapter5.viewmodel.UpcomingViewModel
 import com.google.firebase.auth.FirebaseAuth
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class HomeFragment : Fragment() {
 
     lateinit var binding: FragmentHomeBinding
     lateinit var sharedPreferences: SharedPreferences
     lateinit var firebaseAuth: FirebaseAuth
+    private lateinit var viewModel: UpcomingViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,7 +34,7 @@ class HomeFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
@@ -39,7 +42,7 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        viewModel = ViewModelProvider(this)[UpcomingViewModel::class.java]
         (activity as AppCompatActivity).setSupportActionBar(binding.hdHome)
 
         firebaseAuth = FirebaseAuth.getInstance()
@@ -49,29 +52,25 @@ class HomeFragment : Fragment() {
 
         sharedPreferences = requireContext().getSharedPreferences("keyUser", Context.MODE_PRIVATE)
 
-        var getUser = sharedPreferences.getString("user", "")
+        val getUser = sharedPreferences.getString("user", "")
         binding.txtHeader.text = "Welcome, $getUser"
-
         binding.icProfile.setOnClickListener {
-            var addUser = sharedPreferences.edit()
+            val addUser = sharedPreferences.edit()
             addUser.putString("user", getUser)
             addUser.apply()
             findNavController().navigate(R.id.action_homeFragment_to_profileFragment)
         }
-        val viewModelMovie = ViewModelProvider(this).get(UpcomingViewModel::class.java)
-        viewModelMovie.callApiUpcoming()
-        viewModelMovie.liveDataMovie.observe(viewLifecycleOwner, Observer {
+        binding.ivIcfavhome.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_favFragment)
+        }
+        binding.rvHome.layoutManager = LinearLayoutManager(requireContext())
+        binding.rvHome.setHasFixedSize(false)
+        viewModel.callApiUpcoming()
+        viewModel.movie.observe(viewLifecycleOwner) {
             if (it != null) {
-                binding.rvHome.layoutManager =
-                    LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
                 binding.rvHome.adapter = FilmAdapter(it)
             }
-        })
-
-    }
-
-    override fun onStart() {
-        super.onStart()
+        }
 
     }
 }

@@ -36,9 +36,16 @@
                 android:layout_marginEnd="15dp"
                 android:layout_marginBottom="4dp"
                 android:src="@drawable/ic_person" />
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:id="@+id/iv_icfavhome"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@id/icProfile"
+                android:src="@drawable/ic_favorite_cl" />
+
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
-
 
 
     <TextView

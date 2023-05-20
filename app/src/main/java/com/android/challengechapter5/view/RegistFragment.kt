@@ -12,7 +12,9 @@ import androidx.navigation.fragment.findNavController
 import com.android.challengechapter5.R
 import com.android.challengechapter5.databinding.FragmentRegistBinding
 import com.google.firebase.auth.FirebaseAuth
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class RegistFragment : Fragment() {
 
     lateinit var binding: FragmentRegistBinding
@@ -21,7 +23,7 @@ class RegistFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         binding = FragmentRegistBinding.inflate(inflater, container, false)
         return binding.root
@@ -34,12 +36,12 @@ class RegistFragment : Fragment() {
         firebaseAuth = FirebaseAuth.getInstance()
 
         binding.btnRegist.setOnClickListener {
-            var getUsername = binding.etUname.text.toString()
-            var getEmail = binding.etEmail.text.toString()
-            var getPass = binding.etPwd.text.toString()
-            var getRepeatPass = binding.etConPwd.text.toString()
+            val getUsername = binding.etUname.text.toString()
+            val getEmail = binding.etEmail.text.toString()
+            val getPass = binding.etPwd.text.toString()
+            val getRepeatPass = binding.etConPwd.text.toString()
 
-            var addUser = sharedRegis.edit()
+            val addUser = sharedRegis.edit()
             addUser.putString("user", getUsername)
 
             if (getUsername.isNotEmpty()&& getEmail.isNotEmpty() && getPass.isNotEmpty() && getRepeatPass.isNotEmpty()){

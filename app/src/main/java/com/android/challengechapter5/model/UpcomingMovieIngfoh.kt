@@ -2,6 +2,7 @@ package com.android.challengechapter5.model
 
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class UpcomingMovieIngfoh(
     @SerializedName("dates")
@@ -14,4 +15,4 @@ data class UpcomingMovieIngfoh(
     val totalPages: Int,
     @SerializedName("total_results")
     val totalResults: Int
-)
+): Serializable
