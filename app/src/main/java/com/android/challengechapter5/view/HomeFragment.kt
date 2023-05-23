@@ -3,17 +3,16 @@ package com.android.challengechapter5.view
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.Observer
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.android.challengechapter5.adapter.FilmAdapter
 import com.android.challengechapter5.R
+import com.android.challengechapter5.adapter.FilmAdapter
 import com.android.challengechapter5.databinding.FragmentHomeBinding
 import com.android.challengechapter5.viewmodel.UpcomingViewModel
 import com.google.firebase.auth.FirebaseAuth
@@ -23,8 +22,8 @@ import dagger.hilt.android.AndroidEntryPoint
 class HomeFragment : Fragment() {
 
     lateinit var binding: FragmentHomeBinding
-    lateinit var sharedPreferences: SharedPreferences
-    lateinit var firebaseAuth: FirebaseAuth
+    private lateinit var sharedPreferences: SharedPreferences
+    private lateinit var firebaseAuth: FirebaseAuth
     private lateinit var viewModel: UpcomingViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {

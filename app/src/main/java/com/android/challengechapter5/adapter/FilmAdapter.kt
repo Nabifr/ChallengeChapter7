@@ -1,16 +1,24 @@
+@file:Suppress("MemberVisibilityCanBePrivate", "MemberVisibilityCanBePrivate",
+    "MemberVisibilityCanBePrivate", "MemberVisibilityCanBePrivate", "MemberVisibilityCanBePrivate",
+    "MemberVisibilityCanBePrivate", "MemberVisibilityCanBePrivate", "MemberVisibilityCanBePrivate"
+)
+
 package com.android.challengechapter5.adapter
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.Navigation
-import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.android.challengechapter5.R
 import com.android.challengechapter5.databinding.ItemFilmBinding
 import com.android.challengechapter5.model.UpcomingMovieItem
 import com.bumptech.glide.Glide
 
+@Suppress("MemberVisibilityCanBePrivate", "MemberVisibilityCanBePrivate",
+    "MemberVisibilityCanBePrivate", "MemberVisibilityCanBePrivate", "MemberVisibilityCanBePrivate",
+    "MemberVisibilityCanBePrivate", "MemberVisibilityCanBePrivate", "MemberVisibilityCanBePrivate"
+)
 class FilmAdapter (var listFilm: List<UpcomingMovieItem>) :
     RecyclerView.Adapter<FilmAdapter.ViewHolder>() {
     class ViewHolder(var binding: ItemFilmBinding) : RecyclerView.ViewHolder(binding.root) {

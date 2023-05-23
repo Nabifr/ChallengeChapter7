@@ -1,3 +1,9 @@
+@file:Suppress("MemberVisibilityCanBePrivate", "MemberVisibilityCanBePrivate",
+    "MemberVisibilityCanBePrivate", "MemberVisibilityCanBePrivate", "MemberVisibilityCanBePrivate",
+    "MemberVisibilityCanBePrivate", "MemberVisibilityCanBePrivate", "MemberVisibilityCanBePrivate",
+    "MemberVisibilityCanBePrivate", "unused", "unused", "PrivatePropertyName"
+)
+
 package com.android.challengechapter5.viewmodel
 
 import androidx.lifecycle.LiveData
@@ -10,6 +16,11 @@ import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
+@Suppress("MemberVisibilityCanBePrivate", "MemberVisibilityCanBePrivate",
+    "MemberVisibilityCanBePrivate", "MemberVisibilityCanBePrivate", "MemberVisibilityCanBePrivate",
+    "MemberVisibilityCanBePrivate", "MemberVisibilityCanBePrivate", "MemberVisibilityCanBePrivate",
+    "MemberVisibilityCanBePrivate", "unused", "unused", "PrivatePropertyName"
+)
 @HiltViewModel
 class FavoriteViewModel @Inject constructor(val db: FavDAO) : ViewModel() {
     private val _movie: MutableLiveData<FavData> = MutableLiveData()

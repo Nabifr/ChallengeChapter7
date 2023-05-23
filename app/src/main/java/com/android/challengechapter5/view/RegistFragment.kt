@@ -18,8 +18,8 @@ import dagger.hilt.android.AndroidEntryPoint
 class RegistFragment : Fragment() {
 
     lateinit var binding: FragmentRegistBinding
-    lateinit var sharedRegis: SharedPreferences
-    lateinit var firebaseAuth: FirebaseAuth
+    private lateinit var sharedRegis: SharedPreferences
+    private lateinit var firebaseAuth: FirebaseAuth
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?

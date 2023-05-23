@@ -1,3 +1,8 @@
+@file:Suppress("unused", "unused", "unused", "unused", "unused", "unused", "unused", "unused",
+    "unused", "unused", "unused", "unused", "unused", "unused", "unused", "unused", "unused",
+    "unused", "unused", "unused", "unused", "unused", "unused"
+)
+
 package com.android.challengechapter5.adapter
 
 import android.os.Bundle
@@ -10,6 +15,10 @@ import com.android.challengechapter5.databinding.ItemFavBinding
 import com.android.challengechapter5.room.FavData
 import com.bumptech.glide.Glide
 
+@Suppress("unused", "unused", "unused", "unused", "unused", "unused", "unused", "unused", "unused",
+    "unused", "unused", "unused", "unused", "unused", "unused", "unused", "unused", "unused",
+    "unused", "unused", "unused", "unused", "unused", "unused", "unused", "unused", "unused"
+)
 class FavAdapter(private val listMovie: List<FavData>) :
     RecyclerView.Adapter<FavAdapter.ViewHolder>() {
 

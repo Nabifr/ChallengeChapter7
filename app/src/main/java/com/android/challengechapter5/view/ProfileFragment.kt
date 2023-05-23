@@ -18,8 +18,8 @@ import dagger.hilt.android.AndroidEntryPoint
 class ProfileFragment : Fragment() {
 
     lateinit var binding: FragmentProfileBinding
-    lateinit var sharedPreferences: SharedPreferences
-    lateinit var firebaseAuth: FirebaseAuth
+    private lateinit var sharedPreferences: SharedPreferences
+    private lateinit var firebaseAuth: FirebaseAuth
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,24 +33,24 @@ class ProfileFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         sharedPreferences = requireContext().getSharedPreferences("keyUser", Context.MODE_PRIVATE)
-        var getUser = sharedPreferences.getString("user", "")
+        val getUser = sharedPreferences.getString("user", "")
         binding.etUname.setText(getUser)
 
-        var getNama = sharedPreferences.getString("nama", "")
+        val getNama = sharedPreferences.getString("nama", "")
         binding.etNameLong.setText(getNama)
 
-        var getTgl = sharedPreferences.getString("tgl", "")
+        val getTgl = sharedPreferences.getString("tgl", "")
         binding.etDateBirth.setText(getTgl)
 
-        var getAlamat = sharedPreferences.getString("alamat", "")
+        val getAlamat = sharedPreferences.getString("alamat", "")
         binding.etAddress.setText(getAlamat)
 
         binding.btnUpdate.setOnClickListener {
-            var getUsername = binding.etUname.text.toString()
-            var getNamaLengkap = binding.etNameLong.text.toString()
-            var getTglLahir = binding.etDateBirth.text.toString()
-            var getAlamat = binding.etAddress.text.toString()
-            var addUser = sharedPreferences.edit()
+            val getUsername = binding.etUname.text.toString()
+            val getNamaLengkap = binding.etNameLong.text.toString()
+            val getTglLahir = binding.etDateBirth.text.toString()
+            val getAlamat = binding.etAddress.text.toString()
+            val addUser = sharedPreferences.edit()
             addUser.putString("user", getUsername)
             addUser.putString("nama", getNamaLengkap)
             addUser.putString("tgl", getTglLahir)
@@ -67,7 +67,7 @@ class ProfileFragment : Fragment() {
         binding.btnLogout.setOnClickListener {
             firebaseAuth = FirebaseAuth.getInstance()
             firebaseAuth.signOut()
-            var addUser = sharedPreferences.edit()
+            val addUser = sharedPreferences.edit()
             addUser.remove("nama")
             addUser.remove("tgl")
             addUser.remove("alamat")

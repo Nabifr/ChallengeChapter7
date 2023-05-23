@@ -1,3 +1,5 @@
+@file:Suppress("RedundantNullableReturnType")
+
 package com.android.challengechapter5.view
 
 import android.os.Bundle
@@ -12,11 +14,12 @@ import com.android.challengechapter5.databinding.FragmentLoginBinding
 import com.google.firebase.auth.FirebaseAuth
 import dagger.hilt.android.AndroidEntryPoint
 
+@Suppress("RedundantNullableReturnType")
 @AndroidEntryPoint
 class LoginFragment : Fragment() {
 
     lateinit var binding: FragmentLoginBinding
-    lateinit var firebaseAuth: FirebaseAuth
+    private lateinit var firebaseAuth: FirebaseAuth
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
@@ -36,8 +39,8 @@ class LoginFragment : Fragment() {
             findNavController().navigate(R.id.action_loginFragment_to_registFragment)
         }
         binding.btnLogin.setOnClickListener {
-            var email = binding.EtEmail.text.toString()
-            var passwd = binding.EtPwd.text.toString()
+            val email = binding.EtEmail.text.toString()
+            val passwd = binding.EtPwd.text.toString()
 
             if (email.isNotEmpty() && passwd.isNotEmpty()){
                 firebaseAuth.signInWithEmailAndPassword(email, passwd).addOnCompleteListener{

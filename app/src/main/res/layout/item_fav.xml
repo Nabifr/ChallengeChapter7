@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
@@ -25,7 +26,8 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginRight="10dp"
-                android:src="@{favfilm.PosterPath}"/>
+                android:src="@{favfilm.PosterPath}"
+                tools:ignore="ContentDescription,RtlHardcoded" />
 
             <TextView
                 android:id="@+id/tvJdlFilm"
@@ -35,7 +37,8 @@
                 android:textStyle="bold"
                 android:textSize="20sp"
                 android:textColor="@color/black"
-                android:layout_toRightOf="@id/imgFilm"/>
+                android:layout_toRightOf="@id/imgFilm"
+                tools:ignore="RtlHardcoded" />
             <TextView
                 android:id="@+id/tvTglFilm"
                 android:text="@{favfilm.releasedate}"
@@ -43,7 +46,8 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
                 android:layout_toRightOf="@+id/imgFilm"
-                android:layout_below="@+id/tvJdlFilm"/>
+                android:layout_below="@+id/tvJdlFilm"
+                tools:ignore="RtlHardcoded" />
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 

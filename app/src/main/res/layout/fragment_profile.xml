@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--suppress CheckTagEmptyBody -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,7 +13,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Profil"
+        android:text="@string/profil"
         android:textSize="40sp"
         android:textColor="@color/black"
         style="@style/txtHeader"/>
@@ -32,10 +33,11 @@
             android:id="@+id/etUname"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Nama User"
+            android:hint="@string/nama_userProf"
+            android:padding="5dp"
             android:textColorHint="#80D5D505"
             android:textSize="18sp"
-            android:padding="5dp"/>
+            tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -53,10 +55,11 @@
             android:id="@+id/etNameLong"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Nama Lengkap"
+            android:hint="@string/nama_lengkap"
+            android:padding="5dp"
             android:textColorHint="#80D5D505"
             android:textSize="18sp"
-            android:padding="5dp"/>
+            tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -75,10 +78,11 @@
             android:id="@+id/etDateBirth"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Tanggal Lahir"
+            android:hint="@string/tanggal_lahir"
+            android:padding="5dp"
             android:textColorHint="#80D5D505"
             android:textSize="18sp"
-            android:padding="5dp"/>
+            tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -96,36 +100,37 @@
             android:id="@+id/etAddress"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Alamat"
+            android:hint="@string/alamat"
+            android:padding="5dp"
             android:textColorHint="#80D5D505"
             android:textSize="18sp"
-            android:padding="5dp" />
+            tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btnUpdate"
         android:layout_marginTop="15dp"
-        android:text="Perbarui"
+        android:text="@string/perbarui"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <Button
         android:id="@+id/btnLogout"
         android:layout_marginTop="15dp"
-        android:text="Keluar"
+        android:text="@string/keluar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
 
     <com.google.android.material.button.MaterialButton
-        android:layout_marginTop="15dp"
         android:id="@+id/btnCrashlytics"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Crashlytics Testing"
+        android:layout_marginTop="15dp"
+        android:text="@string/crashlytics_testing"
         android:textColor="@color/white"
         app:backgroundTint="@color/teal_700"
-        app:cornerRadius="16dp">
-    </com.google.android.material.button.MaterialButton>
+        app:cornerRadius="16dp"
+        tools:ignore="TextContrastCheck"></com.google.android.material.button.MaterialButton>
 
 
 </LinearLayout>

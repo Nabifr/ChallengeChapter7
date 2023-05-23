@@ -1,18 +1,24 @@
+@file:Suppress("RedundantNullableReturnType", "RedundantNullableReturnType",
+    "RedundantNullableReturnType"
+)
+
 package com.android.challengechapter5.view
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.android.challengechapter5.adapter.FavAdapter
 import com.android.challengechapter5.databinding.FragmentFavBinding
-import com.android.challengechapter5.room.FavDatabase
 import com.android.challengechapter5.viewmodel.FavoriteViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
+@Suppress("RedundantNullableReturnType", "RedundantNullableReturnType",
+    "RedundantNullableReturnType"
+)
 @AndroidEntryPoint
 class FavFragment : Fragment() {
 

@@ -6,7 +6,6 @@ import androidx.lifecycle.ViewModel
 import com.android.challengechapter5.model.UpcomingMovieIngfoh
 import com.android.challengechapter5.model.UpcomingMovieItem
 import com.android.challengechapter5.network.RestfulApi
-import com.android.challengechapter5.network.RetrofitClient
 import dagger.hilt.android.lifecycle.HiltViewModel
 import retrofit2.Call
 import retrofit2.Callback

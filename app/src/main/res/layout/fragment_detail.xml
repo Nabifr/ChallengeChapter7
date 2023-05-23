@@ -8,54 +8,60 @@
 
     <TextView
         android:id="@+id/tv_home"
-        android:text="Detail"
+        android:text="@string/detail"
         style="@style/txtHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="15dp"/>
+        android:layout_marginBottom="15dp"
+        tools:ignore="VisualLintOverlap" />
 
     <ImageView
         android:id="@+id/imgdetail"
-        android:layout_below="@+id/tv_home"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:layout_below="@+id/tv_home"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
         android:src="@drawable/ic_launcher_background"
-        android:layout_marginBottom="15dp"/>
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <TextView
         android:id="@+id/tvNamaFilm"
-        android:text="Nama Film"
+        android:text="@string/nama_film"
         style="@style/txtHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/imgdetail"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        tools:ignore="VisualLintOverlap" />
 
     <TextView
         android:id="@+id/tvRelease"
-        android:text="Release"
+        android:text="@string/release"
         style="@style/txtBody"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvNamaFilm"/>
+        android:layout_below="@+id/tvNamaFilm"
+        tools:ignore="VisualLintOverlap" />
 
     <TextView
         android:id="@+id/tvRating"
-        android:text="Rating"
+        android:text="@string/rating"
         style="@style/txtBody"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvRelease"/>
+        android:layout_below="@+id/tvRelease"
+        tools:ignore="VisualLintOverlap" />
 
     <TextView
         android:id="@+id/tvSinopsis"
-        android:text="Sinopsys"
+        android:text="@string/sinopsys"
         style="@style/txtBody"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvRating"/>
+        android:layout_below="@+id/tvRating"
+        tools:ignore="VisualLintOverlap" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -68,7 +74,9 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:src="@drawable/ic_favorite_cl"
-            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="5dp"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck" />
 
     </RelativeLayout>
 </RelativeLayout>
