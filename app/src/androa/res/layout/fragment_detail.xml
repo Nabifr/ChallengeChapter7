@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.DetailFragment"
+    android:padding="25dp">
+
+    <TextView
+        android:id="@+id/tv_home"
+        android:text="@string/detail"
+        style="@style/txtHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        tools:ignore="VisualLintOverlap" />
+
+    <ImageView
+        android:id="@+id/imgdetail"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tv_home"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/ic_launcher_background"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/tvNamaFilm"
+        android:text="@string/nama_film"
+        style="@style/txtHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgdetail"
+        android:layout_centerHorizontal="true"
+        tools:ignore="VisualLintOverlap" />
+
+    <TextView
+        android:id="@+id/tvRelease"
+        android:text="@string/release"
+        style="@style/txtBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNamaFilm"
+        tools:ignore="VisualLintOverlap" />
+
+    <TextView
+        android:id="@+id/tvRating"
+        android:text="@string/rating"
+        style="@style/txtBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRelease"
+        tools:ignore="VisualLintOverlap" />
+
+    <TextView
+        android:id="@+id/tvSinopsis"
+        android:text="@string/sinopsys"
+        style="@style/txtBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRating"
+        tools:ignore="VisualLintOverlap" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_favorite_cl"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="5dp"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nama_user">Startseite</string>
+    <string name="email">Email</string>
+    <string name="password">Passwort</string>
+    <string name="konfirmasi_password">Bestätige das Passwort</string>
+    <string name="daftar">Aufführen</string>
+    <string name="sudah_memiliki_akun">Sie haben bereits ein Konto?</string>
+    <string name="emailLogin">Email</string>
+    <string name="kata_sandiLogin">Passwort</string>
+    <string name="masuk">Eingeben</string>
+    <string name="belum_memiliki_akun">Sie haben noch kein Konto?</string>
+    <string name="home">HEIM</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nama_user">مستخدم نما</string>
+    <string name="email">بريد إلكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="konfirmasi_password">تأكيد كلمة المرور</string>
+    <string name="daftar">قائمة</string>
+    <string name="sudah_memiliki_akun">هل لديك حساب؟</string>
+    <string name="emailLogin">بريد إلكتروني</string>
+    <string name="kata_sandiLogin">كلمة المرور</string>
+    <string name="masuk">يدخل</string>
+    <string name="belum_memiliki_akun">لا تملك حسابا حتى الآن؟</string>
+    <string name="home">بيت</string>
+</resources>

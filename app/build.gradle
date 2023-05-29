@@ -23,6 +23,22 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    flavorDimensions("andro")
+    productFlavors{
+        androa{
+            applicationIdSuffix ".androa"
+            dimension "andro"
+        }
+        androb{
+            applicationIdSuffix ".androb"
+            dimension "andro"
+        }
+        androc{
+            applicationIdSuffix ".androc"
+            dimension "andro"
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false

@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "625268393971",
+    "project_id": "cause-a-sky-full-of-stars",
+    "storage_bucket": "cause-a-sky-full-of-stars.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625268393971:android:04a1e92af5386fc5773486",
+        "android_client_info": {
+          "package_name": "com.android.challengechapter5"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqNfOVYQzT4z9UsfyZDC5PcG1br6E579s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625268393971:android:19e0522a4e560b54773486",
+        "android_client_info": {
+          "package_name": "com.android.challengechapter5.androa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqNfOVYQzT4z9UsfyZDC5PcG1br6E579s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625268393971:android:4ab911869513f6a6773486",
+        "android_client_info": {
+          "package_name": "com.android.challengechapter5.androb"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqNfOVYQzT4z9UsfyZDC5PcG1br6E579s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

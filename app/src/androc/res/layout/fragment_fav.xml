@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.FavFragment"
+    android:padding="25dp">
+
+    <ImageView
+        android:id="@+id/icHome"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_home"
+        android:layout_alignParentEnd="true"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_home"
+        android:text="@string/favorite"
+        style="@style/txtHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        tools:ignore="RelativeOverlap" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFav"
+        android:layout_marginTop="20sp"
+        android:layout_below="@id/icHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
