@@ -92,8 +92,15 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth-ktx:22.0.0'
     implementation 'androidx.room:room-common:2.5.1'
     implementation 'androidx.room:room-ktx:2.5.1'
+    implementation 'androidx.test:core-ktx:1.4.0'
+    implementation 'androidx.test:runner:1.4.0'
+    implementation 'androidx.test.ext:junit-ktx:1.1.5'
     testImplementation 'junit:junit:4.13.2'
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1"
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
@@ -137,6 +144,18 @@ dependencies {
     implementation "com.google.dagger:hilt-android:2.44"
     kapt "com.google.dagger:hilt-android-compiler:2.44"
     kapt 'androidx.room:room-compiler:2.5.0-beta01'
+
+    testImplementation "io.mockk:mockk:1.13.1"
+    testImplementation 'org.mockito:mockito-core:3.12.4'
+
+
+    // Dependensi Espresso untuk pengujian UI
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.0'
+
+
+    //menggunakan fungsi launchFragmentInContainer
+    androidTestImplementation 'androidx.fragment:fragment-testing:1.4.0'
+
 }
 kapt {
     correctErrorTypes true
